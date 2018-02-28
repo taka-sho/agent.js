@@ -1,0 +1,16 @@
+extends ../index.pug
+
+block content
+  div
+    a(href="http://example.com") example.com
+
+block footer_content
+  script.
+    !function(e,t,s,n,a,r,c,i){e[a]=e[a]||function(){(e[a].q=e[a].q||[]).push(arguments)},c=t.createElement(s),i=t.getElementsByTagName(s)[0],
+    c.async=1,c.src=n,c.charset=r,c.setAttribute("data-ud-namespace",a),i.parentNode.insertBefore(c,i)}
+    (window,document,"script","https://cdn.userdive.org/agent.js","_ud","UTF-8");
+    _ud("create", 'af57h6gb', 'auto');
+    _ud("require", 'linker');
+    _ud("run", "linker", "autoLink", ['example.com']);
+    _ud("send", "pageview");
+  script(src="https://cdn.userdive.org/linker.js")
